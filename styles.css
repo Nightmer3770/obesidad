@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(242,85,1);
+    background: radial-gradient(circle, rgba(242,85,1,1) 0%, rgba(255,255,255,1) 50%, rgba(242,85,1,1) 100%);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.menu__enlace {
+    max-width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242,85,1);
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 10px 12px 12px #fff;
+    border: 5px solid #fff;
+    transition: all .4s;
+}
+
+.menu__enlace:hover {
+    box-shadow: 10px 22px 22px #fff;
+    background-color: rgba(242,85,1,0.65);
+    transform: scale(0.98);
+}
+
+.menu__enlace--x2 {
+    grid-column: 2 / 3;
+}
+
+.menu__heading {
+    font-size: 92px;
+    text-transform: uppercase;
+    text-shadow: 2px 8px 8px #fff;
+    -webkit-text-stroke: 1px rgb(242,85,1);
+    color: transparent;
+    letter-spacing: 10px;
+    height: 150px;
+}
+
+/* INTERNAS */
+.internas__bg {
+    background-color: rgb(242,85,1);
+}
+
+.internas__bg p,
+.internas__bg li {
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 20px;
+}
+
+.internas__heading {
+    font-size: 72px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 3px 3px #000;
+    border-bottom: 5px dashed #fff;
+    margin-bottom: 25px;
+}
+
+.internas__subtitle {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 2px #000;
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin: 25px;
+}
+
+.materia-profesor {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border-bottom: 5px dashed #fff;
+    padding-bottom: 40px;
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 55px;
+    row-gap: 30px;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.submenu__enlace {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 5px solid #fff;
+    transition: .4s all;
+}
+
+.submenu__enlace:hover {
+    transform: rotate(5deg);
+}
+
+.submenu__enlace--activo {
+    background-color: #fff;
+    color: rgb(242,85,1);
+    font-weight: bold;
+}
